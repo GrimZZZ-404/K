@@ -21,10 +21,10 @@ async def on_presence_update(before: Member, after: Member):
 
             if not after.status in [Status.dnd, Status.idle, Status.online]:
                 offline_embed = Embed(color=Color.red(), description="<:eZaR_offline:924988220062711859> eZaR is offline! Please wait while we solve the issue.", title="Offline moment lol")
-                await status_channel.send(embed=offline_embed)
+                await status_channel.send(content="<@&911199514675802142>", embed=offline_embed)
             elif after.status == Status.online:
                 now_online_embed = Embed(color=Color.green(), description="<:eZaR_online:911562297695141888> eZaR is back online! Applogies for the offline time.", title="Online yey")
-                await status_channel.send(embed=now_online_embed)
+                await status_channel.send(content="<@&911199514675802142>", embed=now_online_embed)
                 print(after.status)
 
 bot.run(Token)
