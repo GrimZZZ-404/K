@@ -1,6 +1,7 @@
 from nextcord import Member, Embed, Color, ActivityType, Activity, Intents, Status
 from nextcord.ext import commands
 from config import Owner_IDS, Token
+print ("hello grim!")
 
 bot = commands.Bot(command_prefix="ä", help_command=None, owner_ids=Owner_IDS, activity=Activity(type=ActivityType.watching, name="eZaR's status UwU"), intents=Intents.all())
 
